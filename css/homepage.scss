@@ -1,0 +1,16 @@
+
+/*
+  Pay attention to the order
+  Variables Number 1
+  Mixins Number 2
+*/
+@import 'sass/helpers/_variables.scss';
+@import 'sass/helpers/_mixins.scss';
+@import 'sass/layout/_grid.scss';
+@import 'sass/components/_buttons.scss';
+@import 'sass/components/_headings.scss';
+
+@import 'sass/pages/_globalpage.scss';
+@import 'sass/layout/_header.scss';
+@import 'sass/pages/_homepage.scss';
+@import 'sass/layout/_footer.scss';

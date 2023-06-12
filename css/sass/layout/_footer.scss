@@ -1,0 +1,130 @@
+/* Start Footer */
+
+.footer {
+  background-color: $greyColor;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: 50px;
+  .gallery, .info, .contact {
+    float: $float-left;
+  }
+  .gallery {
+    @media #{$minSmall} {
+      width: 100%;
+    }
+    @media #{$minMedium} {
+      width: 50%;
+    }
+    .img-box {
+      overflow: hidden;
+      margin-bottom: 20px;
+      img {
+        @media #{$minSmall} {
+          float: $float-left;
+        }
+        width: 100px;
+        height: 100px;
+        padding: 3px;
+        border: 1px solid #333;
+      }
+      .text {
+        @media #{$minSmall} {
+          float: $float-left;
+          margin-right: 15px;
+          margin-left: 15px;
+          width: calc(100% - 130px); /*100% from container - 130px 100 = img width 30px = margin Right and Left*/
+        }
+        h4 {
+          color: $redColor;
+          margin: 20px 0 0;
+        }
+        p {
+          color: #444;
+          line-height: 1.9;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .info {
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minMedium} {
+      width: 25%;
+    }
+    ul {
+      color: #444;
+      line-height: 1.8;
+      li {
+        span {
+          color: $redColor;
+          font-weight: bold;
+        }
+      }
+    }
+    h4 {
+      color: #444;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      color: #444;
+      margin-top: 8px
+    }
+  }
+  .contact {
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minMedium} {
+      width: 25%;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: 1px solid #C9C9C9;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      width: 100%;
+      outline: none;
+    }
+    textarea {
+      height: 120px
+    }
+  }
+  .section-title {
+    color: #444;
+  }
+  .copyright {
+    padding: 25px 0;
+    margin-top: 30px;
+    overflow: hidden;
+    border-top: 1px solid #AAA;
+    color: #444;
+    .copytext,
+    .auther {
+      @media #{$minSmall} {
+        float: $float-left;
+        width: 50%;
+      }
+      @media #{$maxMobile} {
+        float: none;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .auther {
+      @media #{$minSmall} {
+        text-align: $text-right;
+      }
+      span {
+        color: $redColor;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/* End Footer */
